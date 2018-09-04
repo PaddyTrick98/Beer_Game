@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/maxresdefault.jpg);
+}
+
+section#score {
+  width: 100%;
+}
+
+#board {
+  width: 640px;
+  height: 640px;
+  margin: 1em auto;
+  background-color: rgba(250, 250, 250, 0.6);
+}
+
+#board > div {
+  border: 1px solid black;
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+
+section#score div {
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  padding: 0.5em;
+  background-color: rgba(211, 211, 211, 0.75);
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  box-shadow: 1px 1px 5px 1px lightgray;
+  margin: 1em auto;
+}
+
+.furry {
+  background-image: url("../images/ferdas.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coin {
+  background-image: url("../images/puszka.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section#over {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding: 10px;
+  background: rgba(247, 147, 17, 0.5);
+}
+
+section#over div {
+  width: 30%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  margin-top: 100px;
+  margin-left: 35%;
+}
+
+.invisible {
+  display: none;
+}
+
+#over #newGame {
+  width: 300px;
+  height: 60px;
+  display: block;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
